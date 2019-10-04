@@ -1,0 +1,20 @@
+
+Usage:
+ ps [options]
+
+Miscellaneous options:
+ -c                   show scheduling class with -l option
+  c                   show true command name
+  e                   show the environment after command
+  k,    --sort        specify sort order as: [+|-]key[,[+|-]key[,...]]
+  L                   show format specifiers
+  n                   display numeric uid and wchan
+  S,    --cumulative  include some dead child process data
+ -y                   do not show flags, show rss (only with -l)
+ -V, V, --version     display version information and exit
+ -w, w                unlimited output width
+
+        --help <simple|list|output|threads|misc|all>
+                      display help and exit
+
+For more details see ps(1).

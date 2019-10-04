@@ -1,0 +1,544 @@
+Script started on 2019-10-01 13:50:24+0700
+bash-4.4$ ps -a
+  PID TTY          TIME CMD
+  894 tty1     00:00:00 gnome-session-b
+ 1112 tty1     00:12:55 gnome-shell
+ 1171 tty1     00:02:50 Xwayland
+ 1259 tty1     00:00:00 ibus-daemon
+ 1263 tty1     00:00:00 ibus-dconf
+ 1265 tty1     00:00:00 ibus-x11
+ 1346 tty1     00:00:00 gsd-mouse
+ 1347 tty1     00:00:00 gsd-orientation
+ 1353 tty1     00:00:00 gsd-power
+ 1356 tty1     00:00:00 gsd-print-notif
+ 1357 tty1     00:00:00 gsd-rfkill
+ 1358 tty1     00:00:00 gsd-screensaver
+ 1359 tty1     00:00:02 gsd-sharing
+ 1362 tty1     00:00:00 gsd-sound
+ 1369 tty1     00:00:00 gsd-wacom
+ 1371 tty1     00:00:00 gsd-smartcard
+ 1386 tty1     00:00:00 gsd-xrandr
+ 1388 tty1     00:00:00 gsd-xsettings
+ 1389 tty1     00:00:00 gsd-a11y-settin
+ 1390 tty1     00:00:00 gsd-a11y-keyboa
+ 1391 tty1     00:00:02 gsd-color
+ 1394 tty1     00:00:00 gsd-clipboard
+ 1397 tty1     00:00:01 gsd-housekeepin
+ 1398 tty1     00:00:00 gsd-datetime
+ 1399 tty1     00:00:00 gsd-media-keys
+ 1400 tty1     00:00:00 gsd-keyboard
+ 1487 tty1     00:00:00 ibus-engine-sim
+ 1587 tty1     00:00:00 tracker-miner-u
+ 1599 tty1     00:00:00 gsd-disk-utilit
+ 1636 tty1     00:00:00 abrt-applet
+ 1639 tty1     00:00:00 tracker-miner-a
+ 1653 tty1     00:00:00 gsd-printer
+ 1668 tty1     00:00:03 gnome-software
+ 1669 tty1     00:00:00 tracker-extract
+ 1673 tty1     00:00:00 seapplet
+ 1678 tty1     00:00:00 tracker-miner-f
+ 5771 pts/0    00:00:00 script
+ 5774 pts/1    00:00:00 ps
+bash-4.4$ ps -e
+  PID TTY          TIME CMD
+    1 ?        00:00:01 systemd
+    2 ?        00:00:00 kthreadd
+    6 ?        00:00:00 mm_percpu_wq
+    7 ?        00:00:00 ksoftirqd/0
+    8 ?        00:00:06 rcu_sched
+    9 ?        00:00:00 rcu_bh
+   10 ?        00:00:00 migration/0
+   11 ?        00:00:00 watchdog/0
+   12 ?        00:00:00 cpuhp/0
+   13 ?        00:00:00 cpuhp/1
+   14 ?        00:00:00 watchdog/1
+   15 ?        00:00:00 migration/1
+   16 ?        00:00:00 ksoftirqd/1
+   19 ?        00:00:00 cpuhp/2
+   20 ?        00:00:00 watchdog/2
+   21 ?        00:00:00 migration/2
+   22 ?        00:00:00 ksoftirqd/2
+   25 ?        00:00:00 cpuhp/3
+   26 ?        00:00:00 watchdog/3
+   27 ?        00:00:00 migration/3
+   28 ?        00:00:00 ksoftirqd/3
+   31 ?        00:00:00 kdevtmpfs
+   32 ?        00:00:00 netns
+   33 ?        00:00:00 rcu_tasks_kthre
+   34 ?        00:00:00 kauditd
+   36 ?        00:00:00 oom_reaper
+   37 ?        00:00:00 writeback
+   38 ?        00:00:00 kcompactd0
+   39 ?        00:00:00 ksmd
+   40 ?        00:00:00 khugepaged
+   41 ?        00:00:00 crypto
+   42 ?        00:00:00 kintegrityd
+   43 ?        00:00:00 kblockd
+   44 ?        00:00:00 ata_sff
+   45 ?        00:00:00 md
+   46 ?        00:00:00 edac-poller
+   47 ?        00:00:00 devfreq_wq
+   48 ?        00:00:00 watchdogd
+   51 ?        00:00:00 kswapd0
+  101 ?        00:00:00 kthrotld
+  102 ?        00:00:00 acpi_thermal_pm
+  103 ?        00:00:00 scsi_eh_0
+  104 ?        00:00:00 scsi_tmf_0
+  105 ?        00:00:00 scsi_eh_1
+  106 ?        00:00:00 scsi_tmf_1
+  107 ?        00:00:00 scsi_eh_2
+  108 ?        00:00:00 scsi_tmf_2
+  109 ?        00:00:00 scsi_eh_3
+  110 ?        00:00:00 scsi_tmf_3
+  111 ?        00:00:00 scsi_eh_4
+  112 ?        00:00:00 scsi_tmf_4
+  113 ?        00:00:00 scsi_eh_5
+  114 ?        00:00:00 scsi_tmf_5
+  124 ?        00:00:00 dm_bufio_cache
+  125 ?        00:00:00 ipv6_addrconf
+  130 ?        00:00:00 kstrp
+  311 ?        00:00:00 scsi_eh_6
+  313 ?        00:00:00 scsi_eh_7
+  314 ?        00:00:00 scsi_tmf_6
+  315 ?        00:00:00 scsi_tmf_7
+  316 ?        00:00:00 usb-storage
+  317 ?        00:00:00 scsi_eh_8
+  318 ?        00:00:00 scsi_tmf_8
+  326 ?        00:00:00 ttm_swap
+  332 ?        00:00:01 kworker/0:1H
+  339 ?        00:00:00 jbd2/sda5-8
+  340 ?        00:00:00 ext4-rsv-conver
+  427 ?        00:00:01 kworker/3:1H
+  432 ?        00:00:01 systemd-journal
+  455 ?        00:00:00 systemd-udevd
+  517 ?        00:00:00 cfg80211
+  545 ?        00:00:00 jbd2/sda7-8
+  546 ?        00:00:00 ext4-rsv-conver
+  568 ?        00:00:00 rpciod
+  569 ?        00:00:00 kworker/u17:0
+  570 ?        00:00:00 xprtiod
+  573 ?        00:00:00 auditd
+  575 ?        00:00:00 audispd
+  584 ?        00:00:00 sedispatch
+  597 ?        00:00:00 alsactl
+  600 ?        00:00:00 rtkit-daemon
+  603 ?        00:00:00 avahi-daemon
+  604 ?        00:00:05 dbus-daemon
+  605 ?        00:00:00 gssproxy
+  606 ?        00:00:00 avahi-daemon
+  615 ?        00:00:01 firewalld
+  617 ?        00:00:00 sssd
+  618 ?        00:00:00 ModemManager
+  621 ?        00:00:00 abrtd
+  630 ?        00:00:03 chronyd
+  638 ?        00:00:00 sssd_be
+  639 ?        00:00:00 sssd_nss
+  640 ?        00:00:00 accounts-daemon
+  641 ?        00:00:00 systemd-logind
+  656 ?        00:00:00 abrt-dump-journ
+  657 ?        00:00:00 abrt-dump-journ
+  658 ?        00:00:00 abrt-dump-journ
+  659 ?        00:00:06 NetworkManager
+  661 ?        00:00:00 polkitd
+  678 ?        00:00:00 libvirtd
+  686 ?        00:00:00 gdm
+  689 ?        00:00:00 crond
+  699 ?        00:00:00 gdm-session-wor
+  791 ?        00:00:00 wpa_supplicant
+  792 ?        00:00:00 systemd
+  834 ?        00:00:00 (sd-pam)
+  853 ?        00:00:00 gnome-keyring-d
+  877 tty1     00:00:00 gdm-wayland-ses
+  888 ?        00:00:02 dbus-daemon
+  894 tty1     00:00:00 gnome-session-b
+  972 ?        00:00:00 dhclient
+ 1029 ?        00:00:00 gvfsd
+ 1061 ?        00:00:00 gvfsd-fuse
+ 1094 ?        00:00:00 dnsmasq
+ 1095 ?        00:00:00 dnsmasq
+ 1112 tty1     00:12:55 gnome-shell
+ 1139 ?        00:00:00 upowerd
+ 1171 tty1     00:02:50 Xwayland
+ 1179 ?        00:00:00 at-spi-bus-laun
+ 1184 ?        00:00:00 dbus-daemon
+ 1187 ?        00:00:01 at-spi2-registr
+ 1193 ?        00:00:12 pulseaudio
+ 1253 ?        00:00:00 xdg-permission-
+ 1255 ?        00:00:00 gnome-shell-cal
+ 1259 tty1     00:00:00 ibus-daemon
+ 1263 tty1     00:00:00 ibus-dconf
+ 1265 tty1     00:00:00 ibus-x11
+ 1270 ?        00:00:00 ibus-portal
+ 1280 ?        00:00:01 dconf-service
+ 1285 ?        00:00:00 evolution-sourc
+ 1297 ?        00:00:00 goa-daemon
+ 1299 ?        00:00:00 gvfs-udisks2-vo
+ 1306 ?        00:00:00 goa-identity-se
+ 1314 ?        00:00:02 udisksd
+ 1322 ?        00:00:00 gvfs-goa-volume
+ 1326 ?        00:00:00 gvfs-mtp-volume
+ 1330 ?        00:00:00 gvfs-gphoto2-vo
+ 1334 ?        00:00:00 gvfs-afc-volume
+ 1340 ?        00:00:09 packagekitd
+ 1346 tty1     00:00:00 gsd-mouse
+ 1347 tty1     00:00:00 gsd-orientation
+ 1353 tty1     00:00:00 gsd-power
+ 1356 tty1     00:00:00 gsd-print-notif
+ 1357 tty1     00:00:00 gsd-rfkill
+ 1358 tty1     00:00:00 gsd-screensaver
+ 1359 tty1     00:00:02 gsd-sharing
+ 1362 tty1     00:00:00 gsd-sound
+ 1369 tty1     00:00:00 gsd-wacom
+ 1371 tty1     00:00:00 gsd-smartcard
+ 1384 ?        00:00:00 evolution-calen
+ 1386 tty1     00:00:00 gsd-xrandr
+ 1388 tty1     00:00:00 gsd-xsettings
+ 1389 tty1     00:00:00 gsd-a11y-settin
+ 1390 tty1     00:00:00 gsd-a11y-keyboa
+ 1391 tty1     00:00:02 gsd-color
+ 1394 tty1     00:00:00 gsd-clipboard
+ 1397 tty1     00:00:01 gsd-housekeepin
+ 1398 tty1     00:00:00 gsd-datetime
+ 1399 tty1     00:00:00 gsd-media-keys
+ 1400 tty1     00:00:00 gsd-keyboard
+ 1457 ?        00:00:00 evolution-calen
+ 1485 ?        00:00:00 evolution-calen
+ 1487 tty1     00:00:00 ibus-engine-sim
+ 1490 ?        00:00:00 evolution-addre
+ 1582 ?        00:00:00 cupsd
+ 1587 tty1     00:00:00 tracker-miner-u
+ 1590 ?        00:00:00 colord
+ 1597 ?        00:00:00 evolution-addre
+ 1599 tty1     00:00:00 gsd-disk-utilit
+ 1614 ?        00:00:00 tracker-store
+ 1636 tty1     00:00:00 abrt-applet
+ 1639 tty1     00:00:00 tracker-miner-a
+ 1653 tty1     00:00:00 gsd-printer
+ 1668 tty1     00:00:03 gnome-software
+ 1669 tty1     00:00:00 tracker-extract
+ 1673 tty1     00:00:00 seapplet
+ 1674 ?        00:00:00 gvfsd-metadata
+ 1678 tty1     00:00:00 tracker-miner-f
+ 1712 ?        00:00:00 abrt-dbus
+ 1755 ?        00:00:00 fwupd
+ 1784 ?        00:00:00 gvfsd-trash
+ 1875 ?        00:00:00 gconfd-2
+ 2028 ?        00:00:00 gvfsd-network
+ 2043 ?        00:00:00 gvfsd-dnssd
+ 2288 ?        00:00:00 kworker/0:2H
+ 2964 ?        00:00:00 kworker/1:0H
+ 3764 ?        00:00:00 kworker/3:2H
+ 3900 ?        00:00:00 kworker/2:0H
+ 4130 ?        00:00:03 kworker/2:0
+ 4596 ?        00:00:10 kworker/0:0
+ 4753 ?        00:00:01 kworker/3:2
+ 4969 ?        00:00:06 kworker/u16:3
+ 5461 ?        00:00:08 gnome-terminal-
+ 5467 pts/0    00:00:00 bash
+ 5483 ?        00:00:00 kworker/3:1
+ 5513 ?        00:00:03 kworker/u16:1
+ 5561 ?        00:00:00 kworker/1:2
+ 5563 ?        00:00:00 kworker/1:2H
+ 5640 ?        00:00:02 kworker/0:1
+ 5646 ?        00:00:00 kworker/1:0
+ 5664 ?        00:00:00 kworker/2:1H
+ 5667 ?        00:00:00 kworker/u16:2
+ 5668 ?        00:00:00 kworker/2:1
+ 5715 ?        00:00:01 gedit
+ 5724 ?        00:00:00 kworker/1:1
+ 5771 pts/0    00:00:00 script
+ 5773 pts/1    00:00:00 bash
+ 5775 pts/1    00:00:00 ps
+bash-4.4$ ps -x
+  PID TTY      STAT   TIME COMMAND
+  792 ?        Ss     0:00 /usr/lib/systemd/systemd --user
+  834 ?        S      0:00 (sd-pam)
+  853 ?        Sl     0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+  877 tty1     Ssl+   0:00 /usr/libexec/gdm-wayland-session gnome-session
+  888 ?        Ssl    0:02 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+  894 tty1     Sl+    0:00 /usr/libexec/gnome-session-binary
+ 1029 ?        Ssl    0:00 /usr/libexec/gvfsd
+ 1061 ?        Sl     0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+ 1112 tty1     Sl+   12:55 /usr/bin/gnome-shell
+ 1171 tty1     Sl+    2:50 /usr/bin/Xwayland :0 -rootless -noreset -listen 4 -listen 5 -displayfd 6
+ 1179 ?        Ssl    0:00 /usr/libexec/at-spi-bus-launcher
+ 1184 ?        Sl     0:00 /bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+ 1187 ?        Sl     0:01 /usr/libexec/at-spi2-registryd --use-gnome-session
+ 1193 ?        S<l    0:12 /usr/bin/pulseaudio --start --log-target=syslog
+ 1253 ?        Ssl    0:00 /usr/libexec/xdg-permission-store
+ 1255 ?        Sl     0:00 /usr/libexec/gnome-shell-calendar-server
+ 1259 tty1     Sl     0:00 ibus-daemon --xim --panel disable
+ 1263 tty1     Sl     0:00 /usr/libexec/ibus-dconf
+ 1265 tty1     Sl     0:00 /usr/libexec/ibus-x11 --kill-daemon
+ 1270 ?        Sl     0:00 /usr/libexec/ibus-portal
+ 1280 ?        Sl     0:01 /usr/libexec/dconf-service
+ 1285 ?        Ssl    0:00 /usr/libexec/evolution-source-registry
+ 1297 ?        Sl     0:00 /usr/libexec/goa-daemon
+ 1299 ?        Ssl    0:00 /usr/libexec/gvfs-udisks2-volume-monitor
+ 1306 ?        Sl     0:00 /usr/libexec/goa-identity-service
+ 1322 ?        Ssl    0:00 /usr/libexec/gvfs-goa-volume-monitor
+ 1326 ?        Ssl    0:00 /usr/libexec/gvfs-mtp-volume-monitor
+ 1330 ?        Ssl    0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+ 1334 ?        Ssl    0:00 /usr/libexec/gvfs-afc-volume-monitor
+ 1346 tty1     Sl+    0:00 /usr/libexec/gsd-mouse
+ 1347 tty1     Sl+    0:00 /usr/libexec/gsd-orientation
+ 1353 tty1     Sl+    0:00 /usr/libexec/gsd-power
+ 1356 tty1     Sl+    0:00 /usr/libexec/gsd-print-notifications
+ 1357 tty1     Sl+    0:00 /usr/libexec/gsd-rfkill
+ 1358 tty1     Sl+    0:00 /usr/libexec/gsd-screensaver-proxy
+ 1359 tty1     Sl+    0:02 /usr/libexec/gsd-sharing
+ 1362 tty1     Sl+    0:00 /usr/libexec/gsd-sound
+ 1369 tty1     Sl+    0:00 /usr/libexec/gsd-wacom
+ 1371 tty1     Sl+    0:00 /usr/libexec/gsd-smartcard
+ 1384 ?        Ssl    0:00 /usr/libexec/evolution-calendar-factory
+ 1386 tty1     Sl+    0:00 /usr/libexec/gsd-xrandr
+ 1388 tty1     Sl+    0:00 /usr/libexec/gsd-xsettings
+ 1389 tty1     Sl+    0:00 /usr/libexec/gsd-a11y-settings
+ 1390 tty1     Sl+    0:00 /usr/libexec/gsd-a11y-keyboard
+ 1391 tty1     Sl+    0:02 /usr/libexec/gsd-color
+ 1394 tty1     Sl+    0:00 /usr/libexec/gsd-clipboard
+ 1397 tty1     Sl+    0:01 /usr/libexec/gsd-housekeeping
+ 1398 tty1     Sl+    0:00 /usr/libexec/gsd-datetime
+ 1399 tty1     Sl+    0:00 /usr/libexec/gsd-media-keys
+ 1400 tty1     Sl+    0:00 /usr/libexec/gsd-keyboard
+ 1457 ?        Sl     0:00 /usr/libexec/evolution-calendar-factory-subprocess --factory contacts --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx1384x2 --own-path /org/gnome/evolution/datas
+ 1485 ?        Sl     0:00 /usr/libexec/evolution-calendar-factory-subprocess --factory local --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx1384x3 --own-path /org/gnome/evolution/dataserv
+ 1487 tty1     Sl     0:00 /usr/libexec/ibus-engine-simple
+ 1490 ?        Ssl    0:00 /usr/libexec/evolution-addressbook-factory
+ 1587 tty1     SNl+   0:00 /usr/libexec/tracker-miner-user-guides
+ 1597 ?        Sl     0:00 /usr/libexec/evolution-addressbook-factory-subprocess --factory local --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.AddressBookx1490x2 --own-path /org/gnome/evolution/da
+ 1599 tty1     Sl+    0:00 /usr/libexec/gsd-disk-utility-notify
+ 1614 ?        Ssl    0:00 /usr/libexec/tracker-store
+ 1636 tty1     Sl+    0:00 abrt-applet
+ 1639 tty1     SNl+   0:00 /usr/libexec/tracker-miner-apps
+ 1653 tty1     Sl+    0:00 /usr/libexec/gsd-printer
+ 1668 tty1     Sl+    0:03 /usr/bin/gnome-software --gapplication-service
+ 1669 tty1     SNl+   0:00 /usr/libexec/tracker-extract
+ 1673 tty1     S+     0:00 /usr/bin/seapplet
+ 1674 ?        Ssl    0:00 /usr/libexec/gvfsd-metadata
+ 1678 tty1     SNl+   0:00 /usr/libexec/tracker-miner-fs
+ 1784 ?        Sl     0:00 /usr/libexec/gvfsd-trash --spawner :1.16 /org/gtk/gvfs/exec_spaw/0
+ 1875 ?        S      0:00 /usr/libexec/gconfd-2
+ 2028 ?        Sl     0:00 /usr/libexec/gvfsd-network --spawner :1.16 /org/gtk/gvfs/exec_spaw/1
+ 2043 ?        Sl     0:00 /usr/libexec/gvfsd-dnssd --spawner :1.16 /org/gtk/gvfs/exec_spaw/3
+ 5461 ?        Ssl    0:08 /usr/libexec/gnome-terminal-server
+ 5467 pts/0    Ss     0:00 bash
+ 5715 ?        Sl     0:01 /usr/bin/gedit --gapplication-service
+ 5771 pts/0    R+     0:00 script -a psKeys
+ 5773 pts/1    Ss     0:00 bash -i
+ 5776 pts/1    R+     0:00 ps -x
+bash-4.4$ ps -aux
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.3 223984 12024 ?        Ss   08:59   0:01 /usr/lib/systemd/systemd --switched-root --system --deserialize 24
+root         2  0.0  0.0      0     0 ?        S    08:59   0:00 [kthreadd]
+root         6  0.0  0.0      0     0 ?        I<   08:59   0:00 [mm_percpu_wq]
+root         7  0.0  0.0      0     0 ?        S    08:59   0:00 [ksoftirqd/0]
+root         8  0.0  0.0      0     0 ?        I    08:59   0:06 [rcu_sched]
+root         9  0.0  0.0      0     0 ?        I    08:59   0:00 [rcu_bh]
+root        10  0.0  0.0      0     0 ?        S    08:59   0:00 [migration/0]
+root        11  0.0  0.0      0     0 ?        S    08:59   0:00 [watchdog/0]
+root        12  0.0  0.0      0     0 ?        S    08:59   0:00 [cpuhp/0]
+root        13  0.0  0.0      0     0 ?        S    08:59   0:00 [cpuhp/1]
+root        14  0.0  0.0      0     0 ?        S    08:59   0:00 [watchdog/1]
+root        15  0.0  0.0      0     0 ?        S    08:59   0:00 [migration/1]
+root        16  0.0  0.0      0     0 ?        S    08:59   0:00 [ksoftirqd/1]
+root        19  0.0  0.0      0     0 ?        S    08:59   0:00 [cpuhp/2]
+root        20  0.0  0.0      0     0 ?        S    08:59   0:00 [watchdog/2]
+root        21  0.0  0.0      0     0 ?        S    08:59   0:00 [migration/2]
+root        22  0.0  0.0      0     0 ?        S    08:59   0:00 [ksoftirqd/2]
+root        25  0.0  0.0      0     0 ?        S    08:59   0:00 [cpuhp/3]
+root        26  0.0  0.0      0     0 ?        S    08:59   0:00 [watchdog/3]
+root        27  0.0  0.0      0     0 ?        S    08:59   0:00 [migration/3]
+root        28  0.0  0.0      0     0 ?        S    08:59   0:00 [ksoftirqd/3]
+root        31  0.0  0.0      0     0 ?        S    08:59   0:00 [kdevtmpfs]
+root        32  0.0  0.0      0     0 ?        I<   08:59   0:00 [netns]
+root        33  0.0  0.0      0     0 ?        S    08:59   0:00 [rcu_tasks_kthre]
+root        34  0.0  0.0      0     0 ?        S    08:59   0:00 [kauditd]
+root        36  0.0  0.0      0     0 ?        S    08:59   0:00 [oom_reaper]
+root        37  0.0  0.0      0     0 ?        I<   08:59   0:00 [writeback]
+root        38  0.0  0.0      0     0 ?        S    08:59   0:00 [kcompactd0]
+root        39  0.0  0.0      0     0 ?        SN   08:59   0:00 [ksmd]
+root        40  0.0  0.0      0     0 ?        SN   08:59   0:00 [khugepaged]
+root        41  0.0  0.0      0     0 ?        I<   08:59   0:00 [crypto]
+root        42  0.0  0.0      0     0 ?        I<   08:59   0:00 [kintegrityd]
+root        43  0.0  0.0      0     0 ?        I<   08:59   0:00 [kblockd]
+root        44  0.0  0.0      0     0 ?        I<   08:59   0:00 [ata_sff]
+root        45  0.0  0.0      0     0 ?        I<   08:59   0:00 [md]
+root        46  0.0  0.0      0     0 ?        I<   08:59   0:00 [edac-poller]
+root        47  0.0  0.0      0     0 ?        I<   08:59   0:00 [devfreq_wq]
+root        48  0.0  0.0      0     0 ?        S    08:59   0:00 [watchdogd]
+root        51  0.0  0.0      0     0 ?        S    08:59   0:00 [kswapd0]
+root       101  0.0  0.0      0     0 ?        I<   08:59   0:00 [kthrotld]
+root       102  0.0  0.0      0     0 ?        I<   08:59   0:00 [acpi_thermal_pm]
+root       103  0.0  0.0      0     0 ?        S    08:59   0:00 [scsi_eh_0]
+root       104  0.0  0.0      0     0 ?        I<   08:59   0:00 [scsi_tmf_0]
+root       105  0.0  0.0      0     0 ?        S    08:59   0:00 [scsi_eh_1]
+root       106  0.0  0.0      0     0 ?        I<   08:59   0:00 [scsi_tmf_1]
+root       107  0.0  0.0      0     0 ?        S    08:59   0:00 [scsi_eh_2]
+root       108  0.0  0.0      0     0 ?        I<   08:59   0:00 [scsi_tmf_2]
+root       109  0.0  0.0      0     0 ?        S    08:59   0:00 [scsi_eh_3]
+root       110  0.0  0.0      0     0 ?        I<   08:59   0:00 [scsi_tmf_3]
+root       111  0.0  0.0      0     0 ?        S    08:59   0:00 [scsi_eh_4]
+root       112  0.0  0.0      0     0 ?        I<   08:59   0:00 [scsi_tmf_4]
+root       113  0.0  0.0      0     0 ?        S    08:59   0:00 [scsi_eh_5]
+root       114  0.0  0.0      0     0 ?        I<   08:59   0:00 [scsi_tmf_5]
+root       124  0.0  0.0      0     0 ?        I<   08:59   0:00 [dm_bufio_cache]
+root       125  0.0  0.0      0     0 ?        I<   08:59   0:00 [ipv6_addrconf]
+root       130  0.0  0.0      0     0 ?        I<   08:59   0:00 [kstrp]
+root       311  0.0  0.0      0     0 ?        S    08:59   0:00 [scsi_eh_6]
+root       313  0.0  0.0      0     0 ?        S    08:59   0:00 [scsi_eh_7]
+root       314  0.0  0.0      0     0 ?        I<   08:59   0:00 [scsi_tmf_6]
+root       315  0.0  0.0      0     0 ?        I<   08:59   0:00 [scsi_tmf_7]
+root       316  0.0  0.0      0     0 ?        S    08:59   0:00 [usb-storage]
+root       317  0.0  0.0      0     0 ?        S    08:59   0:00 [scsi_eh_8]
+root       318  0.0  0.0      0     0 ?        I<   08:59   0:00 [scsi_tmf_8]
+root       326  0.0  0.0      0     0 ?        I<   08:59   0:00 [ttm_swap]
+root       332  0.0  0.0      0     0 ?        I<   08:59   0:01 [kworker/0:1H]
+root       339  0.0  0.0      0     0 ?        S    08:59   0:00 [jbd2/sda5-8]
+root       340  0.0  0.0      0     0 ?        I<   08:59   0:00 [ext4-rsv-conver]
+root       427  0.0  0.0      0     0 ?        I<   08:59   0:01 [kworker/3:1H]
+root       432  0.0  1.4 148032 54764 ?        Ss   08:59   0:01 /usr/lib/systemd/systemd-journald
+root       455  0.0  0.2  67916  9676 ?        Ss   08:59   0:00 /usr/lib/systemd/systemd-udevd
+root       517  0.0  0.0      0     0 ?        I<   08:59   0:00 [cfg80211]
+root       545  0.0  0.0      0     0 ?        S    08:59   0:00 [jbd2/sda7-8]
+root       546  0.0  0.0      0     0 ?        I<   08:59   0:00 [ext4-rsv-conver]
+root       568  0.0  0.0      0     0 ?        I<   08:59   0:00 [rpciod]
+root       569  0.0  0.0      0     0 ?        I<   08:59   0:00 [kworker/u17:0]
+root       570  0.0  0.0      0     0 ?        I<   08:59   0:00 [xprtiod]
+root       573  0.0  0.0  64060  1848 ?        S<sl 08:59   0:00 /sbin/auditd
+root       575  0.0  0.0  84616  1884 ?        S<sl 08:59   0:00 /sbin/audispd
+root       584  0.0  0.0  40840  1956 ?        S<   08:59   0:00 /usr/sbin/sedispatch
+root       597  0.0  0.0  17036  1524 ?        SNs  08:59   0:00 /usr/sbin/alsactl -s -n 19 -c -E ALSA_CONFIG_PATH=/etc/alsa/alsactl.conf --initfile=/lib/alsa/init/00main rdaemon
+rtkit      600  0.0  0.0 186100  3304 ?        SNsl 08:59   0:00 /usr/libexec/rtkit-daemon
+avahi      603  0.0  0.1  72424  3848 ?        Ss   08:59   0:00 avahi-daemon: running [linux.local]
+dbus       604  0.0  0.1  61728  5728 ?        Ssl  08:59   0:05 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root       605  0.0  0.0 204776  3396 ?        Ssl  08:59   0:00 /usr/sbin/gssproxy -D
+avahi      606  0.0  0.0  72292   356 ?        S    08:59   0:00 avahi-daemon: chroot helper
+root       615  0.0  0.8 345332 33240 ?        Ssl  08:59   0:01 /usr/bin/python3 -Es /usr/sbin/firewalld --nofork --nopid
+root       617  0.0  0.2 278144  8780 ?        Ss   08:59   0:00 /usr/sbin/sssd -i --logger=files
+root       618  0.0  0.2 415252  8980 ?        Ssl  08:59   0:00 /usr/sbin/ModemManager
+root       621  0.0  0.2 466176  9268 ?        Ssl  08:59   0:00 /usr/sbin/abrtd -d -s
+chrony     630  0.0  0.0 122536  3656 ?        S    08:59   0:03 /usr/sbin/chronyd
+root       638  0.0  0.2 276768  9880 ?        S    08:59   0:00 /usr/libexec/sssd/sssd_be --domain implicit_files --uid 0 --gid 0 --logger=files
+root       639  0.0  0.8 277536 33172 ?        S    08:59   0:00 /usr/libexec/sssd/sssd_nss --uid 0 --gid 0 --logger=files
+root       640  0.0  0.2 418236  8168 ?        Ssl  08:59   0:00 /usr/libexec/accounts-daemon
+root       641  0.0  0.2  71440  8960 ?        Ss   08:59   0:00 /usr/lib/systemd/systemd-logind
+root       656  0.0  0.9 951096 35392 ?        Ss   08:59   0:00 /usr/bin/abrt-dump-journal-oops -fxtD
+root       657  0.0  0.9 967020 35544 ?        Ss   08:59   0:00 /usr/bin/abrt-dump-journal-xorg -fxtD
+root       658  0.0  0.5 975652 21088 ?        Ss   08:59   0:00 /usr/bin/abrt-dump-journal-core -D -T -f -e
+root       659  0.0  0.4 728876 17692 ?        Ssl  08:59   0:06 /usr/sbin/NetworkManager --no-daemon
+polkitd    661  0.0  0.4 559128 16268 ?        Ssl  08:59   0:00 /usr/lib/polkit-1/polkitd --no-debug
+root       678  0.0  0.9 960368 35896 ?        Ssl  08:59   0:00 /usr/sbin/libvirtd
+root       686  0.0  0.2 421624 10560 ?        Ssl  08:59   0:00 /usr/sbin/gdm
+root       689  0.0  0.0 143324  3384 ?        Ss   08:59   0:00 /usr/sbin/crond -n
+root       699  0.0  0.2 427724 11144 ?        Sl   08:59   0:00 gdm-session-worker [pam/gdm-autologin]
+root       791  0.0  0.2  52668  7724 ?        Ss   08:59   0:00 /usr/sbin/wpa_supplicant -c /etc/wpa_supplicant/wpa_supplicant.conf -u -s
+is742s08   792  0.0  0.2  82876  7936 ?        Ss   08:59   0:00 /usr/lib/systemd/systemd --user
+is742s08   834  0.0  0.0 133088  3776 ?        S    08:59   0:00 (sd-pam)
+is742s08   853  0.0  0.1 327044  6284 ?        Sl   08:59   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+is742s08   877  0.0  0.3 426312 11412 tty1     Ssl+ 08:59   0:00 /usr/libexec/gdm-wayland-session gnome-session
+is742s08   888  0.0  0.1  73308  5560 ?        Ssl  08:59   0:02 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+is742s08   894  0.0  0.3 678652 15056 tty1     Sl+  08:59   0:00 /usr/libexec/gnome-session-binary
+root       972  0.0  0.2  77164  8528 ?        S    08:59   0:00 /sbin/dhclient -d -q -sf /usr/libexec/nm-dhcp-helper -pf /var/run/dhclient-wlp0s18f2u4.pid -lf /var/lib/NetworkManager/dhclient-38722907-be8c-4f8c
+is742s08  1029  0.0  0.1 398424  7268 ?        Ssl  08:59   0:00 /usr/libexec/gvfsd
+is742s08  1061  0.0  0.1 420116  5200 ?        Sl   08:59   0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+nobody    1094  0.0  0.0  60588   352 ?        S    08:59   0:00 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/libexec/libvirt_leaseshelper
+root      1095  0.0  0.0  60560   352 ?        S    08:59   0:00 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/libexec/libvirt_leaseshelper
+is742s08  1112  4.4  5.6 2608876 215060 tty1   Sl+  08:59  12:55 /usr/bin/gnome-shell
+root      1139  0.0  0.2 424508  9000 ?        Ssl  08:59   0:00 /usr/libexec/upowerd
+is742s08  1171  0.9  1.1 284536 43392 tty1     Sl+  09:00   2:50 /usr/bin/Xwayland :0 -rootless -noreset -listen 4 -listen 5 -displayfd 6
+is742s08  1179  0.0  0.1 347028  5980 ?        Ssl  09:00   0:00 /usr/libexec/at-spi-bus-launcher
+is742s08  1184  0.0  0.1  72416  4636 ?        Sl   09:00   0:00 /bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+is742s08  1187  0.0  0.1 220648  5800 ?        Sl   09:00   0:01 /usr/libexec/at-spi2-registryd --use-gnome-session
+is742s08  1193  0.0  0.3 1281596 12304 ?       S<l  09:00   0:12 /usr/bin/pulseaudio --start --log-target=syslog
+is742s08  1253  0.0  0.2 487528 10308 ?        Ssl  09:00   0:00 /usr/libexec/xdg-permission-store
+is742s08  1255  0.0  0.9 101540960 34628 ?     Sl   09:00   0:00 /usr/libexec/gnome-shell-calendar-server
+is742s08  1259  0.0  0.2 470576  8928 tty1     Sl   09:00   0:00 ibus-daemon --xim --panel disable
+is742s08  1263  0.0  0.1 384968  6180 tty1     Sl   09:00   0:00 /usr/libexec/ibus-dconf
+is742s08  1265  0.0  1.1 592564 42804 tty1     Sl   09:00   0:00 /usr/libexec/ibus-x11 --kill-daemon
+is742s08  1270  0.0  0.1 384920  5900 ?        Sl   09:00   0:00 /usr/libexec/ibus-portal
+is742s08  1280  0.0  0.1 189972  5240 ?        Sl   09:00   0:01 /usr/libexec/dconf-service
+is742s08  1285  0.0  1.0 118967976 39716 ?     Ssl  09:00   0:00 /usr/libexec/evolution-source-registry
+is742s08  1297  0.0  0.8 101538104 31840 ?     Sl   09:00   0:00 /usr/libexec/goa-daemon
+is742s08  1299  0.0  0.2 578732  9064 ?        Ssl  09:00   0:00 /usr/libexec/gvfs-udisks2-volume-monitor
+is742s08  1306  0.0  0.3 600448 13780 ?        Sl   09:00   0:00 /usr/libexec/goa-identity-service
+root      1314  0.0  0.2 403136  9524 ?        Ssl  09:00   0:02 /usr/libexec/udisks2/udisksd
+is742s08  1322  0.0  0.1 380736  6068 ?        Ssl  09:00   0:00 /usr/libexec/gvfs-goa-volume-monitor
+is742s08  1326  0.0  0.1 382556  4992 ?        Ssl  09:00   0:00 /usr/libexec/gvfs-mtp-volume-monitor
+is742s08  1330  0.0  0.1 394940  6596 ?        Ssl  09:00   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+is742s08  1334  0.0  0.2 485472  8200 ?        Ssl  09:00   0:00 /usr/libexec/gvfs-afc-volume-monitor
+root      1340  0.0  2.6 875460 100372 ?       Ssl  09:00   0:09 /usr/libexec/packagekitd
+is742s08  1346  0.0  0.3 511076 12068 tty1     Sl+  09:00   0:00 /usr/libexec/gsd-mouse
+is742s08  1347  0.0  0.3 593004 12072 tty1     Sl+  09:00   0:00 /usr/libexec/gsd-orientation
+is742s08  1353  0.0  1.1 763164 43720 tty1     Sl+  09:00   0:00 /usr/libexec/gsd-power
+is742s08  1356  0.0  1.2 710628 46296 tty1     Sl+  09:00   0:00 /usr/libexec/gsd-print-notifications
+is742s08  1357  0.0  0.3 656268 11868 tty1     Sl+  09:00   0:00 /usr/libexec/gsd-rfkill
+is742s08  1358  0.0  0.3 508784 11884 tty1     Sl+  09:00   0:00 /usr/libexec/gsd-screensaver-proxy
+is742s08  1359  0.0  0.2 561764  9028 tty1     Sl+  09:00   0:02 /usr/libexec/gsd-sharing
+is742s08  1362  0.0  0.3 553424 13284 tty1     Sl+  09:00   0:00 /usr/libexec/gsd-sound
+is742s08  1369  0.0  1.1 672952 43060 tty1     Sl+  09:00   0:00 /usr/libexec/gsd-wacom
+is742s08  1371  0.0  0.3 613732 14168 tty1     Sl+  09:00   0:00 /usr/libexec/gsd-smartcard
+is742s08  1384  0.0  1.1 118509984 43864 ?     Ssl  09:00   0:00 /usr/libexec/evolution-calendar-factory
+is742s08  1386  0.0  1.1 751220 42880 tty1     Sl+  09:00   0:00 /usr/libexec/gsd-xrandr
+is742s08  1388  0.0  1.1 753668 43472 tty1     Sl+  09:00   0:00 /usr/libexec/gsd-xsettings
+is742s08  1389  0.0  0.3 511072 11936 tty1     Sl+  09:00   0:00 /usr/libexec/gsd-a11y-settings
+is742s08  1390  0.0  1.1 676968 42256 tty1     Sl+  09:00   0:00 /usr/libexec/gsd-a11y-keyboard
+is742s08  1391  0.0  1.1 911712 44836 tty1     Sl+  09:00   0:02 /usr/libexec/gsd-color
+is742s08  1394  0.0  1.1 592232 41868 tty1     Sl+  09:00   0:00 /usr/libexec/gsd-clipboard
+is742s08  1397  0.0  1.1 1365096 43872 tty1    Sl+  09:00   0:01 /usr/libexec/gsd-housekeeping
+is742s08  1398  0.0  0.3 547448 14008 tty1     Sl+  09:00   0:00 /usr/libexec/gsd-datetime
+is742s08  1399  0.0  1.1 1053992 45200 tty1    Sl+  09:00   0:00 /usr/libexec/gsd-media-keys
+is742s08  1400  0.0  1.1 748608 42832 tty1     Sl+  09:00   0:00 /usr/libexec/gsd-keyboard
+is742s08  1457  0.0  1.0 101826656 40572 ?     Sl   09:00   0:00 /usr/libexec/evolution-calendar-factory-subprocess --factory contacts --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx1384x2
+is742s08  1485  0.0  1.0 118588748 40556 ?     Sl   09:00   0:00 /usr/libexec/evolution-calendar-factory-subprocess --factory local --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx1384x3 --
+is742s08  1487  0.0  0.1 311280  6184 tty1     Sl   09:00   0:00 /usr/libexec/ibus-engine-simple
+is742s08  1490  0.0  1.0 118494360 39268 ?     Ssl  09:00   0:00 /usr/libexec/evolution-addressbook-factory
+root      1582  0.0  0.2 231988  9932 ?        Ss   09:00   0:00 /usr/sbin/cupsd -l
+is742s08  1587  0.0  0.4 575916 17128 tty1     SNl+ 09:00   0:00 /usr/libexec/tracker-miner-user-guides
+colord    1590  0.0  0.2 425976 10772 ?        Ssl  09:00   0:00 /usr/libexec/colord
+is742s08  1597  0.0  1.0 101811784 38576 ?     Sl   09:00   0:00 /usr/libexec/evolution-addressbook-factory-subprocess --factory local --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.AddressBookx149
+is742s08  1599  0.0  0.2 394044 10836 tty1     Sl+  09:00   0:00 /usr/libexec/gsd-disk-utility-notify
+is742s08  1614  0.0  0.5 628996 21204 ?        Ssl  09:00   0:00 /usr/libexec/tracker-store
+is742s08  1636  0.0  0.6 651884 25528 tty1     Sl+  09:00   0:00 abrt-applet
+is742s08  1639  0.0  0.5 650000 19704 tty1     SNl+ 09:00   0:00 /usr/libexec/tracker-miner-apps
+is742s08  1653  0.0  0.3 622676 13620 tty1     Sl+  09:00   0:00 /usr/libexec/gsd-printer
+is742s08  1668  0.0  2.6 1114968 100844 tty1   Sl+  09:00   0:03 /usr/bin/gnome-software --gapplication-service
+is742s08  1669  0.0  0.8 927848 31088 tty1     SNl+ 09:00   0:00 /usr/libexec/tracker-extract
+is742s08  1673  0.0  0.4 309268 17748 tty1     S+   09:00   0:00 /usr/bin/seapplet
+is742s08  1674  0.0  0.1 308196  7272 ?        Ssl  09:00   0:00 /usr/libexec/gvfsd-metadata
+is742s08  1678  0.0  0.6 670992 23248 tty1     SNl+ 09:00   0:00 /usr/libexec/tracker-miner-fs
+root      1712  0.0  0.2 362664  9788 ?        Sl   09:00   0:00 /usr/sbin/abrt-dbus -t133
+root      1755  0.0  0.4 629356 18412 ?        Ssl  09:00   0:00 /usr/libexec/fwupd/fwupd
+is742s08  1784  0.0  0.1 474600  7356 ?        Sl   09:00   0:00 /usr/libexec/gvfsd-trash --spawner :1.16 /org/gtk/gvfs/exec_spaw/0
+is742s08  1875  0.0  0.1 186224  5896 ?        S    09:00   0:00 /usr/libexec/gconfd-2
+is742s08  2028  0.0  0.2 550452  7656 ?        Sl   09:01   0:00 /usr/libexec/gvfsd-network --spawner :1.16 /org/gtk/gvfs/exec_spaw/1
+is742s08  2043  0.0  0.2 487804  7604 ?        Sl   09:01   0:00 /usr/libexec/gvfsd-dnssd --spawner :1.16 /org/gtk/gvfs/exec_spaw/3
+root      2288  0.0  0.0      0     0 ?        I<   09:09   0:00 [kworker/0:2H]
+root      2964  0.0  0.0      0     0 ?        I<   10:59   0:00 [kworker/1:0H]
+root      3764  0.0  0.0      0     0 ?        I<   11:50   0:00 [kworker/3:2H]
+root      3900  0.0  0.0      0     0 ?        I<   11:54   0:00 [kworker/2:0H]
+root      4130  0.0  0.0      0     0 ?        I    12:08   0:03 [kworker/2:0]
+root      4596  0.1  0.0      0     0 ?        I    12:24   0:10 [kworker/0:0]
+root      4753  0.0  0.0      0     0 ?        I    12:24   0:01 [kworker/3:2]
+root      4969  0.1  0.0      0     0 ?        R    12:46   0:06 [kworker/u16:3]
+is742s08  5461  0.3  1.3 717748 50912 ?        Rsl  13:15   0:08 /usr/libexec/gnome-terminal-server
+is742s08  5467  0.0  0.1 130608  3784 pts/0    Ss   13:15   0:00 bash
+root      5483  0.0  0.0      0     0 ?        R    13:17   0:00 [kworker/3:1]
+root      5513  0.1  0.0      0     0 ?        I    13:18   0:03 [kworker/u16:1]
+root      5561  0.0  0.0      0     0 ?        I    13:26   0:00 [kworker/1:2]
+root      5563  0.0  0.0      0     0 ?        I<   13:28   0:00 [kworker/1:2H]
+root      5640  0.3  0.0      0     0 ?        I    13:39   0:02 [kworker/0:1]
+root      5646  0.0  0.0      0     0 ?        I    13:43   0:00 [kworker/1:0]
+root      5664  0.0  0.0      0     0 ?        I<   13:44   0:00 [kworker/2:1H]
+root      5667  0.2  0.0      0     0 ?        I    13:44   0:00 [kworker/u16:2]
+root      5668  0.0  0.0      0     0 ?        I    13:44   0:00 [kworker/2:1]
+is742s08  5715  0.9  1.9 812896 73536 ?        Sl   13:48   0:01 /usr/bin/gedit --gapplication-service
+root      5724  0.0  0.0      0     0 ?        I    13:48   0:00 [kworker/1:1]
+is742s08  5771  0.0  0.0 131588  2392 pts/0    D+   13:50   0:00 script -a psKeys
+is742s08  5773  0.0  0.1 130608  3848 pts/1    Ss   13:50   0:00 bash -i
+root      5777  0.4  0.0      0     0 ?        I    13:51   0:00 [kworker/u16:0]
+is742s08  5779  1.0  0.0 157776  3652 pts/1    R+   13:51   0:00 ps -aux
+bash-4.4$ exit
+exit
+
+Script done on 2019-10-01 13:51:28+0700

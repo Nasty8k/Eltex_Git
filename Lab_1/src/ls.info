@@ -1,0 +1,36 @@
+File: coreutils.info,  Node: ls invocation,  Next: dir invocation,  Up: Directory listing
+
+10.1 ‘ls’: List directory contents
+==================================
+
+The ‘ls’ program lists information about files 
+(of any type, including directories)
+
+   For non-option command-line arguments that are directories, by
+default ‘ls’ lists the contents of directories, not recursively, and
+omitting files with names beginning with ‘.’. 
+   By default, the output is sorted alphabetically, according to the
+locale settings in effect
+
+   ‘ls’ is such a fundamental program, it has accumulated many
+options over the years.  They are described in the subsections below;
+
+   Exit status:
+
+     0 success
+     1 minor problems  (e.g., failure to access a file or directory not
+       specified as a command line argument.  This happens when listing a
+       directory in which entries are actively being removed or renamed.)
+     2 serious trouble (e.g., memory exhausted, invalid option, failure
+       to access a file or directory specified as a command line argument
+       or a directory loop)
+
+* Menu:
+
+* Which files are listed::
+* What information is listed::
+* Sorting the output::
+* Details about version sort::
+* General output formatting::
+* Formatting file timestamps::
+* Formatting the file names::

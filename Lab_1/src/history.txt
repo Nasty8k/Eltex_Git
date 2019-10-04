@@ -1,0 +1,10 @@
+Script started on 2019-10-01 13:16:28+0700
+bash-4.4$ cp rand randcopy
+bash-4.4$ ls
+cd.help   history  makdir.help	rand	  rmkdir.help
+help.man  ls.info  pwd.help	randcopy  script.help
+bash-4.4$ unlink randcopy 
+bash-4.4$ exit
+exit
+
+Script done on 2019-10-01 13:17:20+0700

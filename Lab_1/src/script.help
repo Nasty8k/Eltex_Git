@@ -1,0 +1,27 @@
+bash-4.4$ script -h
+
+Использование:
+script [-a ] [-c COMMAND ] [-f ] [-q ] [-t ] [file ]  
+
+Make a typescript of a terminal session.
+
+Параметры:
+ -a, --append            Добавляет выходные данные в файл
+ -c, --command <command> run command rather than interactive shell
+ -e, --return            return exit code of the child process
+ -f, --flush             run flush after each write
+     --force             use output file even when it is a link
+ -q, --quiet             be quiet
+ -t, --timing[=<file>]   output timing data to stderr (or to FILE)
+ -V, --version           output version information and exit
+ -h, --help              display this help and exit
+
+DESCRIPTION
+       script makes a typescript of everything displayed on your terminal.  It
+       is useful for students who need a hardcopy  record  of  an  interactive
+       session  as  proof  of  an  assignment,  as  the typescript file can be
+       printed out later with lpr(1).
+
+       If the argument file is given, script saves the dialogue in this  file.
+       If no filename is given, the dialogue is saved in the file typescript.
+
