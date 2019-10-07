@@ -1,7 +1,7 @@
 5
-Hello,World
-C sd
-B ab te
-B y t e
-Eltex is awesome
-5 sorting var
+Hello,World1
+C sd23
+B a4b te56
+Byte
+Eltex569 is awesome!!!!
+10 sorting var

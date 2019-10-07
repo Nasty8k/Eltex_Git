@@ -176,3 +176,148 @@ int cmp6(const void *p1, const void *p2) {
 	return (sp1 - sp2) * (-1);
 }
 
+//var 7
+int var7(char **p_arr_str, int c_str, OUT *output) {
+    replace = 0;
+    int i, j, k;
+    char n;
+    
+    qsort(p_arr_str, c_str, sizeof(char *), cmp7);
+    output->first = replace;
+    
+    for (i = 0; i < c_str; ++i) {
+        for (j = 0, k = 0;(j < strlen(p_arr_str[i])) && (k != 2); ++j) {
+            if (p_arr_str[i][j] >= '0' && p_arr_str[i][j] <= '9') {
+                n = p_arr_str[i][j];
+                k += 1;
+            }
+        }
+        (k == 2) ? (output->string[i] = n) : (output->string[i] = '-');
+    }
+    return 0;
+}
+int cmp7(const void *p1, const void *p2) {
+	char *s1 = *(char **) p1;
+	char *s2 = *(char **) p2;	
+	int c1 = 0, c2 = 0, i;
+	
+	for (i = 0; i < strlen(s1); ++i)
+		if (s1[i] >= '0' && s1[i] <= '9') ++c1;
+		
+	for (i = 0; i < strlen(s2); ++i)
+		if (s2[i] >= '0' && s2[i] <= '9') ++c2;
+
+	if (c1 != c2) replace += 1;  
+	return (c1 - c2);
+}
+
+//var 8
+int var8(char **p_arr_str, int c_str, OUT *output) {
+    replace = 0;
+    nspace = 0;
+    int i, j, k;
+    char n;
+    
+    qsort(p_arr_str, c_str, sizeof(char *), cmp8);
+    output->first = replace;
+    
+    for (i = 0; i < c_str; ++i) {
+        for (j = 0; j < strlen(p_arr_str[i]);  ++j)
+            if (p_arr_str[i][j] >= '0' && p_arr_str[i][j] <= '9') 
+                nspace += 1;
+    }
+    output->second = nspace;
+    return 0;
+}
+int cmp8(const void *p1, const void *p2) {
+	char *s1 = *(char **) p1;
+	char *s2 = *(char **) p2;	
+	int c1 = 0, c2 = 0, i;
+	
+	for (i = 0; i < strlen(s1); ++i)
+		if (s1[i] >= '0' && s1[i] <= '9') ++c1;
+		
+	for (i = 0; i < strlen(s2); ++i)
+		if (s2[i] >= '0' && s2[i] <= '9') ++c2;
+
+	if (c1 != c2) replace += 1;  
+	return (c1 - c2) * (-1);
+}
+
+//var 9
+int var9(char **p_arr_str, int c_str, OUT *output) {
+    replace = 0;
+    nspace = 0;
+    int i, j, k, max, start;
+    
+    qsort(p_arr_str, c_str, sizeof(char *), cmp9);
+    output->first = replace;
+    //TODO recount word's length in every string after space
+    for (i = 0; i < c_str; ++i) {
+        start = 0;
+        for (j = 0; j < strlen(p_arr_str[i]);  ++j) {
+
+            if (p_arr_str[i][j] == ' ') {
+                max = j - start;
+                if (max > nspace) {
+                    nspace = max;
+                    for(k = 0; k < max; ++k)
+                        output->string[k] = p_arr_str[i][k + start];
+                }
+                start = j + 1;
+            }
+        }
+    }
+    output->second = nspace;
+    return 0;
+}
+int cmp9(const void *p1, const void *p2) {
+	char *s1 = *(char **) p1;
+	char *s2 = *(char **) p2;	
+	int l1 = 0, l2 = 0;
+	
+	l1 = schr(s1, ' ');
+	(l1 == -1) ? l1 = strlen(s1) : (l1 += 1);
+	
+    l2 = schr(s2, ' ');
+	(l2 == -1) ? l2 = strlen(s2) : (l2 += 1);
+
+	if (l1 != l2) replace += 1;  
+	return (l1 - l2);
+}
+
+//var 10
+int var10(char **p_arr_str, int c_str, OUT *output) {
+    replace = 0;
+    nspace = 0;
+    int i, j, k, min, start, delta;
+    
+    qsort(p_arr_str, c_str, sizeof(char *), cmp10);
+    
+    start = 0, delta = 0, k = 0;
+	delta = schr(&p_arr_str[0][start], ' ');
+	while (delta != -1) {
+		++k;
+		start += delta + 1;
+		delta = schr(&p_arr_str[0][start+1], ' '); 
+	}
+    output->second = k;
+    
+    //TODO recount word's length in every string after space
+   
+    output->first = nspace;
+    return 0;
+}
+int cmp10(const void *p1, const void *p2) {
+	char *s1 = *(char **) p1;
+	char *s2 = *(char **) p2;	
+	int l1 = 0, l2 = 0;
+	
+	l1 = schr(s1, ' ');
+	(l1 == -1) ? l1 = strlen(s1) : (l1 += 1);
+	
+    l2 = schr(s2, ' ');
+	(l2 == -1) ? l2 = strlen(s2) : (l2 += 1);
+	  
+	return (l1 - l2) * (-1);
+}

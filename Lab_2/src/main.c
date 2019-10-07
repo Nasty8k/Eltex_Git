@@ -1,5 +1,4 @@
 #include "sort.h"
-#define MAXLEN 64
 
 int main(int argc, char *argv[]){
     int i, j;
@@ -55,16 +54,24 @@ int main(int argc, char *argv[]){
           printf("Replaces %d, max words %d\n", output->first, output->second);
           break;
       case 7:
-          var1(p_arr_str, c_str, output);
+          printf("\nSort--(Numeric raise)--Var 7\n>> OUT:\n");
+          var7(p_arr_str, c_str, output);
+          printf("Replaces %d, second num in [%s]\n", output->first, output->string);
           break;
       case 8:
-          var1(p_arr_str, c_str, output);
+          printf("\nSort--(Numeric decrease)--Var 8\n>> OUT:\n");
+          var8(p_arr_str, c_str, output);
+          printf("Replaces %d, nums total %d\n", output->first, output->second);
           break;
       case 9:
-          var1(p_arr_str, c_str, output);
+          printf("\nSort--(First word raise)--Var 9\n>> OUT:\n");
+          var9(p_arr_str, c_str, output);
+          printf("Replaces %d, max word length [%s][%d]\n", output->first, output->string, output->second);
           break;
       case 10:
-          var1(p_arr_str, c_str, output);
+          printf("\nSort--(First word decrease)--Var 10\n>> OUT:\n");
+          var10(p_arr_str, c_str, output);
+          printf("Min length word %d, count words in first str [%d]\n", output->first, output->second);
           break;
       default:
           printf("No exist\n");
