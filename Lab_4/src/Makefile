@@ -3,16 +3,16 @@ CFLAGS = -Wall -Werror -std=c99
 
 .PHONY: clean run
 
-default: main
+default: main_t1
 
-main: main.o
-	$(CC) $(CFLAGS) main.o -o main
+main_t1: main_t1.o
+	$(CC) $(CFLAGS) main_t1.o -o main_t1
 
-main.o: main.c
-	$(CC) -c main.c -o main.o
+main_t1.o: main_t1.c
+	$(CC) -c main_t1.c -o main_t1.o
 		
 clean:
-	rm main.o main
+	rm main_t1.o main_t1
 
-run:
-	./main
+t1:
+	./main_t1 text.txt 15
