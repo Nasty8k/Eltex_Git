@@ -1,24 +1,18 @@
 #include "v5.h"
-
 void inputShopReceipt(ShopReceipt *p);
+void outputShopReceipt(ShopReceipt *p);
 
 int main(int argc, char **argv) {
-    static ShopReceipt arr[3];
-    static ShopReceipt *p = arr;
-  
+    ShopReceipt *sp;
+    sp = malloc(sizeof(ShopReceipt) * 3);
+    ShopReceipt *p;
     int i;
-    for (i = 0; i < 1; ++i) {
+    for (i = 0, p = sp; i < 3; ++i, ++p)
         inputShopReceipt(p);
-        p++;
-    }
     
-    for (i = 0; i < 1; ++i) {
-        printf("\n> Num %d ------\n", i+1);
-        printf("  Name[%s]\n", arr[i].name);
-        printf("  Number = %u\n", arr[i].number);
-        printf("  Price = %u\n", arr[i].price);
-        printf("  Data = %2u - %2u - %u\n", arr[i].date.day, arr[i].date.month, arr[i].date.year + YEAR0);
-    }
+    for (i = 0, p = sp; i < 3; ++i, ++p)
+        outputShopReceipt(p);
+
 	exit(EXIT_SUCCESS);
 }
 
@@ -41,4 +35,11 @@ void inputShopReceipt(ShopReceipt *p) {
     p->date.day = x;
     p->date.month = y;
     p->date.year = z - YEAR0;
+}
+void outputShopReceipt(ShopReceipt *p) {
+    printf("  Name[%s]\n", p->name);
+    printf("  Number = %u\n", p->number);
+    printf("  Price = %u\n", p->price);
+    printf("  Data = %2u - %2u - %u\n",  p->date.day,  p->date.month,  p->date.year + YEAR0);
+    printf("--------\n");
 }
