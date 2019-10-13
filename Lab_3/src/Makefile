@@ -1,19 +1,19 @@
-OBJ = main.o
+OBJ = main_t1.o
 CC = gcc
 CFLAGS = -Wall -Werror -std=c99
 
 .PHONY: clean run
 
-default: main
+default: main_t1
 
-main: $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o main
+main_t1: main_t1.o
+	$(CC) $(CFLAGS) main_t1.o -o main_
 
-main.o: main.c
-	$(CC) -c main.c -o main.o
+main_t1.o: main_t1.c
+	$(CC) -c main_t1.c -o main_t1.o
 
 clean:
-	rm main.o main
+	rm main_t1.o main_t1
 
-run:
-	./main
+t1:
+	./main_t1
