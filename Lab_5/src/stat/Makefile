@@ -12,9 +12,6 @@ libvar5.a: var5.o
 
 prog: main.c
 	gcc main.c -L. -lvar5 -o prog
-
-main_t2.o: main_t2.c
-	$(CC) -c main_t2.c -o main_t2.o
 		
 clean:
 	rm *.o *.a prog
