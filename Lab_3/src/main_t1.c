@@ -1,19 +1,20 @@
 #include "v5.h"
+#define NUM 3
 
 void inputShopReceipt(ShopReceipt *p);
 void outputShopReceipt(ShopReceipt *p);
 
 int main(int argc, char **argv) {
-    static ShopReceipt arr[3];
+    static ShopReceipt arr[NUM];
     static ShopReceipt *p = arr;
     int i;
-    for (i = 0, p = arr; i < 3; ++i, ++p)
+    for (i = 0, p = arr; i < NUM; ++i, ++p)
         inputShopReceipt(p);
 
-    for (i = 0, p = arr; i < 3; ++i, ++p)
+    for (i = 0, p = arr; i < NUM; ++i, ++p)
         outputShopReceipt(p);
 
-	exit(EXIT_SUCCESS);
+    exit(EXIT_SUCCESS);
 }
 
 void inputShopReceipt(ShopReceipt *p) {
