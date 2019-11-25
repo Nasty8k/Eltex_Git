@@ -26,7 +26,7 @@ int main(int argc, char *argv[]) {
     int indx = 0, found = 0, len = 0;
     
     int bee   = atoi(argv[1]);//пчелы - количество пчел
-    strcpy(honey, argv[2]);    //пчелы - порция добычи меда
+    strcpy(honey, argv[2]);   //пчелы - порция добычи меда
     len = strlen(honey);
     honey[len] = div; honey[len + 1] = '\0';
 
@@ -84,18 +84,18 @@ int main(int argc, char *argv[]) {
             found = 0;
             start = clock();
         }
+        end = clock();//Проверка времени
+        seconds += (double)(end - start) / CLOCKS_PER_SEC;
         
         if (seconds > bTime) {
            printf("  Винни пух ушел\n");
-           system()
            flag = 0;
            exit(EXIT_SUCCESS);
         }
-        printf("ТУТ k =%f/%f", seconds, bTime);
+        printf("Время прошло %f/%f", seconds, bTime);
         k += 1;
         if (k == bee) k = 0;
-        end = clock();//Проверка времени
-        seconds += (double)(end - start) / CLOCKS_PER_SEC;
+        
     }
    
     return 0;
