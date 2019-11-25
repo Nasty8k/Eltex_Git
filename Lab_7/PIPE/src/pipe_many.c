@@ -30,7 +30,7 @@ int main(int argc, char *argv[]) {
     len = strlen(honey);
     honey[len] = div; honey[len + 1] = '\0';
 
-    int bEat  = atoi(argv[3]);//медведь - количество поедания меда
+    int bEat  = atoi(argv[3]);   //медведь - количество поедания меда
     double bTime = atof(argv[4]);//медведь - время поедания или ожидания меда  
 
     int pid[bee], fd[bee][2], i, k = 0; //работа с потоками
